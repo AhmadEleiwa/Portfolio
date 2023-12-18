@@ -3,7 +3,6 @@ import style from "./style.module.css";
 import ExpandField from "./ExpandField";
 import {
   faGitAlt,
-  faJava,
   faPython,
   faReact,
 } from "@fortawesome/free-brands-svg-icons";
