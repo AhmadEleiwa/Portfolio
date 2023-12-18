@@ -1,0 +1,7 @@
+.container{
+  /* height: 400em; */
+  display: flex;
+  flex-direction: column;
+  gap: 4em;
+
+}
