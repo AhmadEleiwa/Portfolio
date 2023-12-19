@@ -35,7 +35,7 @@ const Header: FC<props> = ({}) => {
     const factor = Math.floor(Math.exp(window.scrollY*0.017)  )
     const hecfactor = (factor > 255? 255: factor ).toString(16) 
     ev.style.backgroundColor = "#2b3137" +( hecfactor.length >1 ? hecfactor : "0"+ hecfactor)  
-    ev.style.boxShadow= `0 1px 2px #242424${( hecfactor.length >1 ? hecfactor : "0"+ hecfactor)  }`
+    ev.style.boxShadow= `0 1px 4px #202020${( hecfactor.length >1 ? hecfactor : "0"+ hecfactor)  }`
   };
   useEffect(() => {
     window.addEventListener("scroll", onScroll);
