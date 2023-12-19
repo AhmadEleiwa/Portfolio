@@ -1,4 +1,4 @@
-import { FC, MouseEvent, useEffect, useRef, useState } from "react";
+import { FC, MouseEvent, useEffect, useRef } from "react";
 import style from "./style.module.css";
 interface props {}
 
