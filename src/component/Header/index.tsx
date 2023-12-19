@@ -9,7 +9,7 @@ const Header: FC<props> = ({}) => {
     var ev = event.currentTarget;
     var int = setInterval(() => {
       x += 10;
-      ev.style.background = `radial-gradient(farthest-side, #313131${
+      ev.style.background = `radial-gradient(farthest-side, #474747${
         x > 10 ? x : "0" + x
       }, #ebf8e100)`;
     }, 10);
@@ -34,8 +34,8 @@ const Header: FC<props> = ({}) => {
     const ev = headerRef.current as HTMLElement
     const factor = Math.floor(Math.exp(window.scrollY*0.017)  )
     const hecfactor = (factor > 255? 255: factor ).toString(16) 
-    ev.style.backgroundColor = "#242424" +( hecfactor.length >1 ? hecfactor : "0"+ hecfactor)  
-    ev.style.boxShadow= `0 1px 2px #202020${( hecfactor.length >1 ? hecfactor : "0"+ hecfactor)  }`
+    ev.style.backgroundColor = "#2b3137" +( hecfactor.length >1 ? hecfactor : "0"+ hecfactor)  
+    ev.style.boxShadow= `0 1px 2px #242424${( hecfactor.length >1 ? hecfactor : "0"+ hecfactor)  }`
   };
   useEffect(() => {
     window.addEventListener("scroll", onScroll);

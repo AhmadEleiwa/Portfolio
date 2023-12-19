@@ -1,7 +1,6 @@
 .header {
   width: 100vw;
   height: 4em;
-  background-color: inherit;
   display: flex;
   align-items: center;
   justify-content: space-between;
