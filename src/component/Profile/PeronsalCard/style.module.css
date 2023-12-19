@@ -1,46 +1,48 @@
-.peronsalCard{
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* justify-content: center; */
-    padding: 1em;
-    border-radius: 5px;
-    gap: 1em;
-    box-shadow: 0 1px 4px #12121266;
+.peronsalCard {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  padding: 1em;
+  border-radius: 5px;
+  gap: 1em;
+  background-color: var(--secondary);
+  box-shadow: 0 2px 4px #12121266;
+  /* border: 1px solid #12121288; */
 }
 
-.peronsalCard > *{
-    width: 100%;
+.peronsalCard > * {
+  width: 100%;
 }
-.profileImage{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 2px 6px #12121211;
-    padding: 8px;
-    position: relative;
-    overflow: hidden;
+.profileImage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 6px #12121211;
+  padding: 8px;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
 }
-.profileImage img{
-    width: 30%;
-    border-radius: 50%;
+.profileImage img {
+  width: 30%;
+  border-radius: 50%;
 }
 .bio {
-    width: 100%;
+  width: 100%;
 }
-.bio textarea{
-    width: 100% !important;
-    height: 3.5em !important;
-    padding: 1em;
-    resize: none;
-    font-family: 'Pixelify Sans', sans-serif;
-
+.bio textarea {
+  width: 100% !important;
+  height: 3.5em !important;
+  padding: 1em;
+  resize: none;
+  font-family: "Pixelify Sans", sans-serif;
 }
 
-.media{
-    padding: 5px;
-    display: flex;
-    gap: 1em;
-    font-size: 30px;
+.media {
+  padding: 5px;
+  display: flex;
+  gap: 1em;
+  font-size: 30px;
 }
