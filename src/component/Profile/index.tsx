@@ -5,8 +5,8 @@ import SkillCards from "./SkillCards";
 
 const Profile: FC = () => {
   return (
-    <div>
-      <h1 style={{ width: "75%", margin: "0em auto" }}>My Profile</h1>
+    <div className={style.profile}>
+      <h1 className={style.title} >My Profile</h1>
       <div className={style.container}>
         <PeronsalCard />
         <SkillCards />

@@ -4,3 +4,15 @@
   flex-direction: column;
   gap: 4em;
 }
+.stocks {
+  z-index: -1;
+}
+
+@media screen and (max-width: 800px) {
+  .stocks {
+    display: none;
+  }
+  .container {
+    gap: 1em;
+  }
+}

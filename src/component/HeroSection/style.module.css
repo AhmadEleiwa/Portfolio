@@ -37,18 +37,6 @@
   animation-fill-mode: forwards;
   letter-spacing: 10px;
 }
-.dropShadow {
-  width: 100%;
-  height: 100vh;
-  position: absolute;
-  background: radial-gradient(closest-side, #efefef00, #12121255);
-  z-index: 0;
-  opacity: 0.5;
-  overflow: hidden;
-}
-.dropShadow:hover {
-  background: radial-gradient(closest-side, #efefef00, #12121299);
-}
 
 .icon {
   width: 1.5em;
@@ -95,9 +83,13 @@
 @media screen and (max-width: 800px) {
   .heroSection {
     font-size: smaller;
+    height: 50vh;
+  }
+  .dropShadow {
+    height: 50vh;
   }
   .heroSection .titleContainer {
-    width: 100%;
+    /* width: 100%; */
     gap: 1em;
   }
 }

@@ -20,14 +20,11 @@ function App() {
       <div ref={dataRef}></div>
       <Info />
       <MyProjects />
-      <div style={{ zIndex: -1 }}>
-        <div style={{ position: "absolute", top: "110vh", left: "1em" }}>
+      <div className={"stocks"}>
+        <div style={{ position: "absolute", top: "100vh" }}>
           <img src="skills.png" alt="" />{" "}
         </div>
-        <div style={{ position: "absolute", top: "1300px", right: "2em" }}>
-          <img src="dot_matrix.svg" alt="" />{" "}
-        </div>
-        <div style={{ position: "absolute", top: "1300px", right: "2em" }}>
+        <div style={{ position: "absolute", top: "1550px", right: "2em" }}>
           <img src="projects.png" alt="" />{" "}
         </div>
       </div>

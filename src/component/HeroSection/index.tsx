@@ -26,7 +26,6 @@ const HeroSection: FC<props> = ({ onClick }) => {
   }, []);
   return (
     <div className={style.container}>
-      <div ref={section} className={style.dropShadow}></div>
       <div ref={section} className={style.heroSection}>
         <div className={style.titleContainer}>
           <h1>Ahmad Ilawa </h1>

@@ -1,6 +1,6 @@
 .card {
   width: 40em;
-  height: 10em;
+  min-height: 10em;
   /* box-shadow: 0 1px 4px #12121288; */
   border: 1px solid #12121288;
   display: flex;
@@ -11,11 +11,17 @@
   background-color: var(--secondary);
   transition: all 0.17s ease-in-out;
 }
-.language{
-    width: 100%;
-    display: flex   ;
-    align-items: center;
-    /* justify-content: center; */
-    gap:1em;
-    font-size: 14px;
+.language {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  gap: 1em;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 800px) {
+  .card {
+    height: auto;
+  }
 }
