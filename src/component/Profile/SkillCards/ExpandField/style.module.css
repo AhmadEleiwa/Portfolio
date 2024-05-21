@@ -9,6 +9,7 @@
   display: flex;
   justify-content: space-between;
   border-top: 1px solid #12121222;
+
   padding: 1em;
 }
 .description {
@@ -16,5 +17,20 @@
   padding: 0 1em;
   transition: all 0.17s ease-in-out;
   overflow-y: auto;
-  background-color: #3a3a3a66;
+
+  background-color: var(--bodyContentColor);
+}
+.icon {
+  width: 1em;
+  height: 1em;
+  padding: 0.5em;
+  border-radius: 50%;
+  position: relative;
+  transition: all 0.17s ease-in-out;
+  color: rgba(0, 0, 0, 0);
+  color:  var(--actionColor);
+}
+
+.icon:active {
+  background-color: rgba(68, 67, 67, 0.253);
 }

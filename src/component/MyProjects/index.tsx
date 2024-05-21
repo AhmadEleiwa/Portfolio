@@ -2,10 +2,12 @@ import { FC } from "react";
 import Card from "./Card";
 import style from "./style.module.css";
 
+
+
 const MyProjects: FC = () => {
   return (
     <div className={style.myProjects}>
-      <h1>My Projects</h1>
+      <h1 >My Projects</h1>
       <div className={style.list}>
         <Card title="POS-System" description="" langauge="Typescript" />
         <Card title="TodoListReact" description="Todo List app using React.js" langauge="Javascript" />

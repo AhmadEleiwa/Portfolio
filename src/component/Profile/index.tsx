@@ -2,17 +2,16 @@ import { FC } from "react";
 import PeronsalCard from "./PeronsalCard";
 import style from "./style.module.css";
 import SkillCards from "./SkillCards";
-import dancing from "./dancing.gif";
-interface props {}
-const Profile: FC<props> = () => {
+
+const Profile: FC<props> = ({rf}) => {
   return (
-    <>
-      <h1 style={{textAlign:'center'}}>My Profile</h1>
+    <div ref={ref}>
+      <h1 style={{ width: "75%", margin: "0em auto" }}>My Profile</h1>
       <div className={style.container}>
         <PeronsalCard />
         <SkillCards />
       </div>
-    </>
+    </div>
   );
 };
 

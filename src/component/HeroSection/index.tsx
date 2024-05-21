@@ -1,8 +1,12 @@
 import { FC, useEffect, useRef } from "react";
 import style from "./style.module.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCaretDown } from "@fortawesome/free-solid-svg-icons";
 
-interface props {}
-const HeroSection: FC<props> = ({}) => {
+interface props {
+  onClick?: () => void;
+}
+const HeroSection: FC<props> = ({ onClick }) => {
   const section = useRef<HTMLDivElement>(null);
   let factorY = 0;
   const onScroll = () => {
@@ -10,8 +14,8 @@ const HeroSection: FC<props> = ({}) => {
 
     factorY = (-window.scrollY / window.screen.height) * 100;
     sec.style.backgroundPositionY = 80 + factorY + "%";
-    const blurFactor = Math.floor(Math.exp(window.scrollY *0.017))
-    sec.style.filter = `blur(${blurFactor <= 1? 0 : blurFactor *0.02 }px)`;
+    const blurFactor = Math.floor(Math.exp(window.scrollY * 0.017));
+    sec.style.filter = `blur(${blurFactor <= 1 ? 0 : blurFactor * 0.02}px)`;
   };
 
   useEffect(() => {
@@ -23,7 +27,19 @@ const HeroSection: FC<props> = ({}) => {
   return (
     <div className={style.container}>
       <div ref={section} className={style.dropShadow}></div>
-      <div ref={section} className={style.heroSection}></div>
+      <div ref={section} className={style.heroSection}>
+        <div className={style.titleContainer}>
+          <h1>Ahmad Ilawa </h1>
+          <h2>Web Developer</h2>
+          <FontAwesomeIcon
+            className={style.icon}
+            onClick={onClick}
+            icon={faCaretDown}
+            size={"2x"}
+            cursor={"pointer"}
+          />
+        </div>
+      </div>
     </div>
   );
 };

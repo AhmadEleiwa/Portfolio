@@ -1,24 +1,103 @@
-.container{
+.container {
   overflow: hidden;
-  
 }
 .heroSection {
   width: 100%;
-  height: 70vh;
-  background: url("bg2.gif");
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url("bg.png");
   background-size: cover;
   background-position: 80% 50%;
   background-repeat: no-repeat;
+  font-size: larger;
+}
+.heroSection h1 {
+  margin-top: 2em;
+}
+
+.heroSection .titleContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1em;
+}
+.heroSection h1,
+.heroSection h2 {
+  color: white;
+  width: 0%;
+  animation: wordsCutting 1s ease-in-out;
+  overflow: hidden;
+  white-space: nowrap;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  letter-spacing: 10px;
 }
 .dropShadow {
   width: 100%;
-  height: 70vh;
+  height: 100vh;
   position: absolute;
-    background: radial-gradient(closest-side, #efefef00, #12121255);
+  background: radial-gradient(closest-side, #efefef00, #12121255);
   z-index: 0;
   opacity: 0.5;
   overflow: hidden;
 }
-.dropShadow:hover{
-    background: radial-gradient(closest-side, #efefef00, #12121299);
+.dropShadow:hover {
+  background: radial-gradient(closest-side, #efefef00, #12121299);
+}
+
+.icon {
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 50%;
+  position: relative;
+  transition: all 0.17s ease-in-out;
+  color: whitesmoke;
+  border: 1px solid whitesmoke;
+}
+.icon:hover {
+  animation: iconAnimaton;
+  animation-duration: 0.9s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+.icon:active {
+  background-color: rgba(68, 67, 67, 0.466);
+  border: 1px solid rgba(68, 67, 67, 0.466);
+}
+@keyframes iconAnimaton {
+  0% {
+    top: 0px;
+  }
+  50% {
+    top: 5px;
+  }
+
+  100% {
+    top: 0px;
+  }
+}
+
+@keyframes wordsCutting {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .heroSection {
+    font-size: smaller;
+  }
+  .heroSection .titleContainer {
+    width: 100%;
+    gap: 1em;
+  }
 }

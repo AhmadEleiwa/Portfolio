@@ -1,13 +1,10 @@
 :root {
-  font-family: "Pixelify Sans", sans-serif;
+  font-family: "Space Mono", monospace;
+  /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
   line-height: 1.5;
   font-weight: 400;
-  --background: #24292e;
-  --secondary: #2b3137;
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: var(--background);
 
+  color-scheme: light dark;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -18,8 +15,10 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
-body{
+body {
+  background-color: var(--background);
   overflow-x: hidden;
 }
 a {
@@ -54,8 +53,12 @@ button:focus-visible {
 
 @media (prefers-color-scheme: light) {
   :root {
-    color: #213547;
-    background-color: #ffffff;
+    --background: #fcfcfc;
+    --secondary: #fcfcfc;
+    --fontColor: #2f2f2f;
+    --actionColor: #121212;
+    --bodyContentColor: #f8f8f8;
+    color: var(--fontColor);
   }
   a:hover {
     color: #747bff;
@@ -64,3 +67,22 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+ @media (prefers-color-scheme: dark) {
+  :root {
+    color: #213547;
+    --background: #0f0f0f;
+    --secondary: #1f1f1f;
+    --fontColor: #f8f8f8;
+    --actionColor: #efefef;
+    --bodyContentColor: #121212;
+
+    color: var(--fontColor);
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+} 

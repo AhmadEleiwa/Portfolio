@@ -10,6 +10,7 @@ const PeronsalCard: FC<props> = () => {
       <div className={style.profileImage}>
         <img src={profileImage} alt="" />
         <div
+        className={style.blur}
           style={{
             backgroundImage: `url("${profileImage}")`,
             filter: "blur(20px)",
@@ -19,8 +20,7 @@ const PeronsalCard: FC<props> = () => {
             height: "100%",
             zIndex: -1,
             backgroundPositionY: "center",
-          }}
-        ></div>
+          }}></div>
       </div>
       <div className={style.title}>
         <h3> Ahmad Eleiwa</h3>
@@ -40,7 +40,11 @@ const PeronsalCard: FC<props> = () => {
         </a>
 
         <a href="https://www.linkedin.com/in/ahmadilawa/" target="_blank">
-          <FontAwesomeIcon icon={faLinkedin} cursor={"pointer"} />
+          <FontAwesomeIcon
+            className={style.icon}
+            icon={faLinkedin}
+            cursor={"pointer"}
+          />
         </a>
       </div>
     </div>

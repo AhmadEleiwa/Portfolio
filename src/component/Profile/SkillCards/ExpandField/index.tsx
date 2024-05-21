@@ -28,6 +28,7 @@ const ExpandField: FC<props> = ({ description,icon,title }) => {
           <p>{title}</p>
         </div>
         {description &&<FontAwesomeIcon
+          className={style.icon}
           icon={dropDownOpenm ?  faCaretUp : faCaretDown}
           cursor={"pointer"}
           onClick={dropDownHandler}
