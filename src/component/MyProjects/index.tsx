@@ -4,9 +4,9 @@ import style from "./style.module.css";
 
 const MyProjects: FC = () => {
   return (
-    <div className={style.myProjects}>
+    <div className={style.myProjects} id="Projects">
       <h1>My Projects</h1>
-      <div className={style.list}>
+      <div className={style.list} id="Project">
         <Card
           title="POS-System"
           description="Point Of Sale System is Webstie that manage a supermarket carts"

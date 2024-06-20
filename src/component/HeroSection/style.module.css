@@ -8,11 +8,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: url("bg.png");
+  /* background: url("bg.png"); */
   background-size: cover;
   background-position: 80% 50%;
   background-repeat: no-repeat;
   font-size: larger;
+
 }
 .heroSection h1 {
   margin-top: 2em;
@@ -24,20 +25,57 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  gap: 1em;
-}
-.heroSection h1,
-.heroSection h2 {
-  color: white;
-  width: 0%;
-  animation: wordsCutting 1s ease-in-out;
+  gap: 2em;
+  width: 0;
+  height: 0;
   overflow: hidden;
-  white-space: nowrap;
-  animation-delay: 1s;
-  animation-fill-mode: forwards;
-  letter-spacing: 10px;
+  border-top: 1px solid whitesmoke;
+  border-bottom: 1px solid whitesmoke;
+  transition: all 0.27s ease-in-out;
+}
+.animate .titleContainer{
+  width:60%;
+  height: 65vh;
 }
 
+.heroSection h1,
+.heroSection p
+ {
+  background: -webkit-linear-gradient(45deg  , #eee, #707070);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: white;
+  width: 0%;
+  overflow: hidden;
+  white-space: nowrap;
+  letter-spacing: 10px;
+  transition: all 0.27s ease-in-out;
+}
+
+
+
+.heroSection p{
+  letter-spacing: 5px;
+}
+.animate h1, .animate p{
+  animation: wordsCutting 1s ease-in-out;
+  /* animation-delay: 1s; */
+  animation-fill-mode: forwards;
+}
+
+.heroSection h2{
+  width: 1ch;
+  height: 0lh;
+  white-space: nowrap;
+
+  overflow: hidden;
+  transition: all 0.27s ease-in-out;
+
+
+}
+.heroSection h2::after{
+  content: "|";
+}
 .icon {
   width: 1.5em;
   height: 1.5em;

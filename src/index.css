@@ -2,12 +2,13 @@
   font-family: "Space Mono", monospace;
   /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
   line-height: 1.5;
+  
   font-weight: 400;
-  --background: #fcfcfc;
-  --secondary: #fcfcfc;
-  --fontColor: #2f2f2f;
-  --actionColor: #121212;
-  --bodyContentColor: #f8f8f8;
+  --background: linear-gradient(to right, #23075B, #330B82)  ;
+  --secondary: #150933;
+  --fontColor: #fefefe;
+  --actionColor: #fefefe;
+  --bodyContentColor: #231c36;
   color-scheme: light;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -22,7 +23,8 @@
   scroll-behavior: smooth;
 }
 body {
-  background-color: var(--background);
+  background: var(--background);
+  color: var(--fontColor);
   overflow-x: hidden;
 }
 a {

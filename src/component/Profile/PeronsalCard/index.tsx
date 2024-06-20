@@ -1,18 +1,18 @@
 import { FC } from "react";
 import style from "./style.module.css";
-import profileImage from "./profile_image.jpg";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 interface props {}
 const PeronsalCard: FC<props> = () => {
   return (
-    <div className={style.peronsalCard}>
+    <div className={style.peronsalCard} >
       <div className={style.profileImage}>
-        <img src={profileImage} alt="" />
+        <img src={'profile_image.jpg'} alt="" />
         <div
         className={style.blur}
           style={{
-            backgroundImage: `url("${profileImage}")`,
+            backgroundImage: `url("profile_image.jpg")`,
             filter: "blur(20px)",
             position: "absolute",
             opacity: "0.5",
