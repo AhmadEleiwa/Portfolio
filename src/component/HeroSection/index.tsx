@@ -53,10 +53,9 @@ const HeroSection: FC<props> = ({ onClick }) => {
     };
   }, []);
   return (
-    <div className={style.container}>
-      <div id="About"></div>
+    <div className={style.container} id="About">
       <div ref={section} className={style.heroSection}>
-        <div className={style.titleContainer} >
+        <div className={style.titleContainer}>
           <h1>AHMAD ILAWA</h1>
           <h2 ref={head}></h2>
           <p>Frontend Dev | CSE Student @ Arab American University</p>
@@ -69,6 +68,7 @@ const HeroSection: FC<props> = ({ onClick }) => {
           />
         </div>
       </div>
+      <div id="About"></div>
     </div>
   );
 };

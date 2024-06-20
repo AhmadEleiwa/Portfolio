@@ -4,7 +4,7 @@ import style from "./style.module.css";
 
 const MyProjects: FC = () => {
   return (
-    <div className={style.myProjects} id="Projects">
+    <div className={style.myProjects} id="">
       <h1>My Projects</h1>
       <div className={style.list} id="Project">
         <Card
@@ -34,6 +34,7 @@ const MyProjects: FC = () => {
         />
         <Card title="JEnjine" description="Java game engine" langauge="Java" />
       </div>
+      <div id="Projects"></div>
     </div>
   );
 };
