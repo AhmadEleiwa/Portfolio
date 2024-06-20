@@ -5,10 +5,10 @@ import SkillCards from "./SkillCards";
 
 const Profile: FC = () => {
   return (
-    <div className={style.profile}>
+    <div className={style.profile} id="Skills">
       <div id="Skills"></div>
-      <h1 className={style.title} >My Profile</h1>
-      <div className={style.container}  >
+      <h1 className={style.title}>My Profile</h1>
+      <div className={style.container}>
         <PeronsalCard />
         <SkillCards />
       </div>

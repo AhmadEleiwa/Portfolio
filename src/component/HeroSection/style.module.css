@@ -40,7 +40,7 @@
 .heroSection h1,
 .heroSection p {
   background: -webkit-linear-gradient(45deg, #eee, #707070);
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   color: white;
   width: 0%;
