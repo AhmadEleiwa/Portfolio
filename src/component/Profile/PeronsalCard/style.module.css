@@ -8,6 +8,8 @@
   gap: 1em;
   background-color: var(--secondary);
   box-shadow: 0 2px 4px #12121266;
+
+
 }
 
 .peronsalCard > * {
@@ -46,4 +48,6 @@
 .media a {
   color: var(--fontColor);
 }
+
+
 
