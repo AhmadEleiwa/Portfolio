@@ -63,14 +63,6 @@ function App() {
       <div ref={dataRef}></div>
       <Info />
       <MyProjects />
-      <div className={"stocks"}>
-        <div style={{ position: "absolute", top: "100vh" }}>
-          <img src="skills.png" alt="" />{" "}
-        </div>
-        <div style={{ position: "absolute", top: "1550px", right: "2em" }}>
-          <img src="projects.png" alt="" />{" "}
-        </div>
-      </div>
     </div>
   );
 }
