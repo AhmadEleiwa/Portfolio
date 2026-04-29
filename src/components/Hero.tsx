@@ -27,7 +27,7 @@ export function Hero({ profile }: HeroProps) {
 
         <h1 className="text-4xl md:text-6xl font-black tracking-tighter text-text-bright uppercase leading-none">
           {profile.name} <br />
-          <span className="text-accent-blue">SYSTEMS_ENGINEER</span>
+          <span className="text-accent-blue">COMPUTER_ENGINEER</span>
         </h1>
         
         <p className="text-sm md:text-base text-text-dim max-w-xl mx-auto font-medium tracking-tight">
