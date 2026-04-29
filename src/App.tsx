@@ -48,27 +48,23 @@ export default function App() {
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           <div className="flex items-center gap-4">
             <div className="w-10 h-10 border border-accent-blue flex items-center justify-center font-bold text-sm text-accent-blue">
-              AR
+              AE
             </div>
             <div>
               <h1 className="text-sm font-bold tracking-tight text-white uppercase">{profile.name}</h1>
-              <div className="font-mono text-[9px] text-accent-blue/70">SYS_ENG_v2.4_STABLE</div>
             </div>
           </div>
           
           <div className="hidden lg:flex gap-10">
             <div className="font-mono text-[10px] text-text-dim flex flex-col">
               <span className="text-[8px] uppercase tracking-widest opacity-50">Locus</span>
-              <span className="text-accent-blue">GAZA/PALESTINE</span>
+              <span className="text-accent-blue">JENIN/PALESTINE</span>
             </div>
             <div className="font-mono text-[10px] text-text-dim flex flex-col">
               <span className="text-[8px] uppercase tracking-widest opacity-50">Target</span>
-              <span className="text-accent-blue">FULLSTACK_ARCT</span>
+              <span className="text-accent-blue">FULLSTACK</span>
             </div>
-            <div className="font-mono text-[10px] text-text-dim flex flex-col">
-              <span className="text-[8px] uppercase tracking-widest opacity-50">Status</span>
-              <span className="text-accent-green">ACTIVE_SYNC</span>
-            </div>
+  
           </div>
 
           <div className="flex items-center gap-4">
